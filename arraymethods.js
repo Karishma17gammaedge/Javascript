@@ -1,0 +1,59 @@
+console.log("hello");
+const obj = {
+    name:"Karishma Jain",
+    age: 20
+}
+
+let user = { name: 'John' };
+
+let admin = user;
+
+admin.name = 'Pete';
+
+console.log(user.name);
+
+
+
+let text = "HELLO WORLD";
+let char = text.charAt(0);
+console.log(char);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+let myList = fruits.toString();
+console.log(myList);
+
+fruits.push("hhhh");
+fruits.shift()
+
+
+const array= [10, 20, 30, 40];
+const sliced = arr.slice(1,2); 
+
+console.log(sliced);
+console.log(arr);
+
+
+
+const arr = [10, 20, 30, 40];
+const removed = arr.splice(1, 3); 
+
+console.log(removed); 
+console.log(arr);   
+
+console.log(Math.floor(Math.random() * 10));
+
+
+const object = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
+
+console.log(obj);
+
+
+let string= "Apple, Banana, Kiwi";
+let part1= str.substring(7, 13);
+
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7, 6);
+console.log(part);
+
+
