@@ -35,3 +35,27 @@ let result = largestNumber([1,2,3,4,6,5])
 console.log(result);
 
 
+
+// const counter =()=>{
+//    let i;
+//     for( i=0;i<10;i++){
+//       console.log(i);
+      
+//     }
+//     return i; 
+// }
+
+// counter();
+
+const n = 5;
+for (let i = 1; i <= n; i++) {
+    let str = '';
+    for (let j = 1; j <= i; j++) {
+        str += "*" + ' ';
+    }
+    console.log(str);
+}
+
+
+
+
