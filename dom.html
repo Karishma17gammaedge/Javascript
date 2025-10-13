@@ -1,0 +1,128 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myBox{
+            color:white;
+            background-color:teal;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Practising dom</h2>
+    <p id="p">practicising the dom id elemnts</p>
+     <p>
+        This example illustrates the <b>getElementById</b> method.
+    </p>
+    <p id="demo"></p>
+
+    <label for="">adding the number</label>
+    <input type="text" id="val1">
+
+    <label for="">Enter value 2</label>
+    <input type="text" id="val2">
+
+    <button onclick="getAdd()">add</button>
+    <p id="result"></p>
+ 
+    <script>
+        const element = document.getElementById("p");
+        document.getElementById("demo").innerHTML= "dom manipulation allow us to" + element.innerHTML
+        let newdiv = document.createElement("div")
+        newdiv.textContent="this is a new div"
+        document.body.appendChild(newdiv);   
+        // newdiv.style.backgroundColor="teal"  
+        // newdiv.style.color="white"
+        newdiv.classList.add("myBox");
+        
+       document.getElementById("div").style.color = "red"
+
+
+        function getAdd(){
+           const num1 =  Number(document.getElementById("val1").value)
+           const num2 = Number(document.getElementById("val2").value)
+           const add = num1 + num2
+           console.log(add);
+
+           document.getElementById("result").innerHTML = "Addition : " + add;
+         
+            document.getElementById("result").style.color = "red";
+           
+        }
+    </script>
+
+    
+</body>
+</html> -->
+
+
+
+<!-- <html>
+<head>
+    <style>
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="example" class="bold">This is a text element with the "bold" class.</div>
+
+    <button onclick="addClass()">Add 'highlight' Class</button>
+    <button onclick="removeClass()">Remove 'bold' Class</button>
+    <button onclick="toggleClass()">Toggle 'highlight' Class</button>
+    <script>
+        function addClass() {
+            document.getElementById("example").classList.add("highlight");
+        }
+        function removeClass() {
+            document.getElementById("example").classList.remove("bold");
+        }
+        function toggleClass() {
+            document.getElementById("example").classList.toggle("highlight");
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- 
+<html>
+<head></head>
+<body>
+    <label>Enter Value 1: </label>
+    <input type="text" id="val1" />
+    <br />
+    <br />
+    <label>Enter Value 2: </label>
+    <input type=".text" id="val2" />
+    <br />
+    <button onclick="getAdd()">Click To Add</button>
+    <p id="result"></p>
+    <script type="text/javascript">
+        function getAdd() {
+            const num1 = Number(document.getElementById("val1").value);
+        
+            const num2 = Number(document.getElementById("val2").value);
+            const add = num1 + num2;
+            console.log(add);
+     
+            document.getElementById("result").innerHTML = "Addition : " + add;
+         
+            document.getElementById("result").style.color = "red";
+        }
+    </script>
+</body>
+</html> -->
+
+
+

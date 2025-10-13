@@ -12,7 +12,3 @@ const closure = outerfunction()
 closure()
 
 
-
-
-console.log(this);
-

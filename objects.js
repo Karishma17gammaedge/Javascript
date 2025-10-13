@@ -33,6 +33,23 @@ const allstudents = new students("karishma","b.tech")
 console.log(allstudents,"hgewge");
 
 
+function college(department,course) {
+    return{
+        department:department,
+        course:course,   
+ }
+    
+}
+
+const myCollege = new college("sage","btech")
+let {department,course} = myCollege
+console.log(department,"mydepartment");
+// console.log(myCollege.department);
+
+
+
+
+
 
 
 
