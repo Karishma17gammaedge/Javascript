@@ -30,8 +30,8 @@ const user = {
 
 
 const user1 ={
-    firstname:"asdfghjk",
-    lastname:"euioiuyt"
+    firstname:"karishma ",
+    lastname:"jain",
 }
 
 let fullname = user.fullname.bind(user1)

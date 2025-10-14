@@ -5,22 +5,42 @@
     <meta name="viewport" content="width=device-width">
     <title>Random color example — event handler attribute</title>
     <style>
-      button {
+        #parent{
+            width: 500px;
+            height: 500px;
+            background-color: aquamarine;
+        }
+        #child{
+            width: 300px;
+            height:100px;
+            background-color: blue;
+        }
+      #btn {
         margin: 10px;
       }
     </style>
   </head>
   <body>
-    <button>Change color</button>
+    <div id="parent">Parent
+        <div id="child">child
+            <button id="btn">Click me</button>
+        </div>
+    </div>
     <script>
-    const btn = document.querySelector("button");
-    function random(number){
-        return Math.floor(Math.random()*(number+1))
-    }
-    btn.addEventListener("click" , ()=>{
-        const rndColor = `rgb(${random(255)} ${random(255)} ${random(255)})`
+ document.getElementById("parent").addEventListener("click" , function(){
+    console.log("parent clicked");
+ }
+)
 
-    document.body.style.backgroundColor=rndColor
+    document.getElementById("child").addEventListener("click",function(){
+        console.log("child clicked");
+        
+    })
+
+    document.getElementById("btn").addEventListener("click",function(){
+        console.log("button clicked");
+        // e.stopPropagation()
+        
     })
 
     </script>
