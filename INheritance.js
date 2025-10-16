@@ -71,6 +71,18 @@ Object.setPrototypeOf(son , father)
 let abc = Object.getPrototypeOf(son)
 console.log(abc)
 
+function greet(name){
+    this.name =name;
+
+}
+greet.prototype.Person =function(){
+    console.log(this.name);
+    
+}
+
+const john = new greet ("john")
+john.Person();
+
 
 
 let user = {
