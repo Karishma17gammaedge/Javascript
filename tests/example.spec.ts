@@ -18,15 +18,37 @@ import { test, expect } from '@playwright/test';
 // });
 
 
-test('has title', async ({ page }) => {
-  await page.goto(' http://localhost:5173/');
+test('has title', {
+    // {tag: '@fast',}
+     annotation: {
+    type: 'issue',
+    description: 'https://github.com/microsoft/playwright/issues/23180',
+  }},
+    
+async ({ page }) => {
+  await page.goto('http://localhost:5173/',{ waitUntil: 'networkidle' });
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/raectproject/);
 
+  await page.getByLabel('User Name').fill('Karishma');
+  await expect(page.getByLabel('User Name')).toHaveValue("Karishma")
 
-  // const locator = page.getByRole('button',{name:'sign in'});
-  //  await locator.click();
+
+
+  const locator = page.getByRole('button',{name:'learn more'});
+   await locator.click();
+
+  const link = page.locator('a#ink-navigation');
+  await expect(link).toBeDisabled()
 });
+
+
+test('skip this test', async ({ page, browserName }) => {
+  test.skip(browserName === 'webkit', 'Still working on it');
+});
+
+// test.skip(({ browserName }) => browserName === 'webkit', 'Still working on it');
+
 
 
