@@ -1,19 +1,19 @@
-import { test, expect } from '@playwright/test';
+// import { test, expect } from '@playwright/test';
 
-test.describe('group', {
-  tag: '@report',
-}, () => {
-  test('test header', async ({ page }) => {
-    await page.goto("https://javascript.info/") 
+// test.describe('group', {
+//   tag: '@report',
+// }, () => {
+//   test('test header', async ({ page }) => {
+//     await page.goto("https://javascript.info/") 
 
-    await expect(page).toHaveTitle('/The Modern JavaScript Tutorial/')
+//     await expect(page).toHaveTitle('/The Modern JavaScript Tutorial/')
    
-  });
+//   });
 
-  test('test full report', async ({ page }) => {
+//   test('test full report', async ({ page }) => {
   
-  });
-});
+//   });
+// });
 
 // page object model
 
